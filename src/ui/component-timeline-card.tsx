@@ -5,6 +5,7 @@ interface ExperienceProps {
   experienceRole: string;
   experienceName: string;
   experienceCommit: number;
+  experienceDescription: string;
   events: Event[];
 }
 
@@ -14,6 +15,7 @@ const TimelineCard: React.FC<ExperienceProps> = ({
   experienceCommit,
   experienceDate,
   experienceRole,
+  experienceDescription,
 }) => {
   return (
     <>
@@ -30,24 +32,34 @@ const TimelineCard: React.FC<ExperienceProps> = ({
             <span className="font-medium text-gray-900 dark:text-white">
               {experienceName}
             </span>{" "}
-            committed in{" "}
-            <span className="font-medium text-gray-900 dark:text-white">
-              {" "}
-              {experienceCommit} events
-            </span>
+            {experienceCommit !== 0 && (
+              <span>
+                committed in{" "}
+                <span className="font-medium text-gray-900 dark:text-white">
+                  {" "}
+                  {experienceCommit} events
+                </span>
+              </span>
+            )}
           </div>
         </div>
-        <ol className="relative border-s ml-2">
-          {events.map((event) => (
-            <li key={event.name} className="mb-10 ms-6">
-              <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 bg-gray-300 ring-gray-800"></span>
-              <div className="text-sm text-white font-medium">{event.name}</div>
-              <div className="text-sm font-normal">
-                {event.date} - {event.location}
-              </div>
-            </li>
-          ))}
-        </ol>
+        {experienceDescription !== "" ? (
+          <p className="text-gray-400 font-semibold">{experienceDescription}</p>
+        ) : (
+          <ol className="relative border-s ml-2">
+            {events.map((event) => (
+              <li key={event.name} className="mb-10 ms-6">
+                <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 bg-gray-300 ring-gray-800"></span>
+                <div className="text-sm text-white font-medium">
+                  {event.name}
+                </div>
+                <div className="text-sm font-normal">
+                  {event.date} - {event.location}
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
       </div>
     </>
   );

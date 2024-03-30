@@ -26,11 +26,11 @@ export const demos: { name: string; items: Item[] }[] = [
     items: [
       {
         name: 'Past Project',
-        slug: 'loading',
+        slug: 'past-project',
       },
       {
         name: 'Current Project',
-        slug: 'error-handling',
+        slug: 'current-project',
       },
     ],
   },

@@ -9,10 +9,10 @@ import {
 } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
-import { CurrentProject } from "../lib/project";
+import { Project } from "../lib/project";
 
 interface CarouselCardProps {
-  cards: CurrentProject[];
+  cards: Project[];
   delay: number;
 }
 
@@ -24,10 +24,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ cards, delay }) => {
       spaceBetween={20}
       slidesPerView={1}
       autoplay={{ delay: delay }}
-      freeMode={true}
-      navigation
       loop={true}
-      pagination={{ clickable: true }}
     >
       {cards.map((card) => (
         <SwiperSlide key={card.name} className="swiper-slide">

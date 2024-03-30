@@ -2,10 +2,9 @@
 
 import React, { Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import path from "path";
 
 function Params() {
-  const searchParams = useSearchParams()!;
+  const searchParams = useSearchParams();
 
   return searchParams.toString().length !== 0 ? (
     <div className="px-2 text-gray-500">
@@ -40,7 +39,7 @@ export function AddressBar() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <div className="flex items-center gap-x-2 mx-6 lg:py-3">
+    <div className="flex items-center gap-x-2 mx-3 lg:mx-6 lg:py-3">
       <div className="text-gray-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +56,7 @@ export function AddressBar() {
       </div>
       <div className="flex gap-x-1 text-sm font-medium">
         <div>
-          <span className="px-2 text-gray-400">localhost.com{pathname}</span>
+          <span className="text-gray-400">.com{pathname}</span>
         </div>
 
         <Suspense>

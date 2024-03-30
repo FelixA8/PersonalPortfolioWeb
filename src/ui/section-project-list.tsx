@@ -28,7 +28,7 @@ const PastProjectList: React.FC<{ path: string }> = ({ path }) => {
                     className="w-fit"
                     width={2000000}
                     height={2000000}
-                    src={project.image[0]}
+                    src={"https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" + project.image[0]}
                     alt="project"
                   />
                   <p className="text-gray-300 text-xl text-start font-semibold py-3 px-3 border-t border-gray-700">

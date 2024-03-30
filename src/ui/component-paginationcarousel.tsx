@@ -26,7 +26,7 @@ const PaginationCarouselCard: React.FC<CarouselCardProps> = ({ cards }) => {
                 className="w-fit"
                 width={2000000}
                 height={2000000}
-                src={card}
+                src={"https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" + card}
                 alt="project"
               />
             </div>

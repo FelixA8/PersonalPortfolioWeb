@@ -13,7 +13,7 @@ export const listCurrentProject: Project[] = [
     name: "NextJS Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae perferendis libero voluptate accusantium vero asperiores dolore doloribus, fugiat eveniet. Voluptas, voluptatum assumenda.",
-    image: ["/project/portfolio-nextjs/1.png"],
+    image: ["/project/portfolio-nextjs/1.png", "/project/portfolio-nextjs/2.png", "/project/portfolio-nextjs/3.png"],
     link: "https://github.com/FelixA8/",
     duration: "March 2024 - Present",
     framework: ["NextJS", "Tailwind CSS", "Typescript", "React Framework"],
@@ -33,7 +33,7 @@ export const listCurrentProject: Project[] = [
     name: "Willify",
     description:
       "Willify is a dynamic responsive website crafted using fundamental web technologies: vanilla HTML, CSS, and JavaScript. With five web pages encompassing the home, songs, registration, about us, and song details. Willify also implements the standard web principles, ensuring a clean and user-friendly interface. This project is dedicated to elevate my proficiency in web development, particularly in the aspect of web design. The project's pinnacle challenge lies in conceptualizing and structuring the website. This phase requires extensive research into web design principles and their practical implementation, also searching for references of other web pages.",
-    image: ["/project/willify/1.png"],
+    image: ["/project/willify/1.png", "/project/willify/2.png", "/project/willify/3.png"],
     link: "https://github.com/FelixA8/",
     duration: "February 2024 - Present",
     framework: ["HTML", "CSS", "JavaScript"],
@@ -46,7 +46,7 @@ export const listPastProject: Project[] = [
     name: "Portfolio With Vanilla HTML, CSS, JS",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae perferendis libero voluptate accusantium vero asperiores dolore doloribus, fugiat eveniet. Voluptas, voluptatum assumenda.",
-    image: ["/project/portfolio-htmlcssjs/1.png"],
+    image: ["/project/portfolio-htmlcssjs/1.png", "/project/portfolio-htmlcssjs/2.png", "/project/portfolio-htmlcssjs/3.png"],
     link: "https://github.com/FelixA8/My-Web-Portofolio/tree/master",
     duration: "December 2023 - January 2024",
     framework: ["HTML", "CSS", "JavaScript"],
@@ -56,7 +56,7 @@ export const listPastProject: Project[] = [
     name: "InnoNest Shopping App",
     description:
       "InnoNest is a furniture online shopping app that is powered using Flutter and Firebase. User can login using their normal email/ password or using external authentication using Google sign in. In the app, user can scroll into various furniture that are sold in the app, purchasing the product using a simple cart system and check their purchase history. User also can edit their username or address. InnoNest also has an augmented reality feature powered by Google ARCore that is implemented in every product. With this feature, user can preview the selected product in their current room with a camera. User able preview the product in a 3D Model preview in their device. As the project lead, I split the responsibilities for every team member, assigning tasks between designing, development and key presenter. The development of the app is also my responsibilities as an app developer.\nThis project is dedicated for SoCS Hackathon 2023, where our team managed to reach the grand finale after competing with over more than 30 other teams. ",
-    image: ["/project/innonest/1.png"],
+    image: ["/project/innonest/1.png", "/project/innonest/2.png"],
     link: "https://github.com/FelixA8/InnoNest",
     duration: "July 2023 - October 2023",
     framework: ["Flutter Framework", "Dart", "Firebase"],

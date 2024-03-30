@@ -34,7 +34,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ cards, delay }) => {
                 className="w-fit"
                 width={2000000}
                 height={2000000}
-                src={card.image[0]}
+                src={"https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" + card.image[0]}
                 alt="project"
               />
             </div>

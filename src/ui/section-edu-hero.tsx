@@ -18,9 +18,9 @@ const EduHero = () => {
         </div>
         <div className="w-full mt-10 lg:w-1/2 relative">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-          <div className="relative shadow-xl bg-black border border-gray-800  px-8 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          <div className="relative shadow-xl bg-black border border-gray-800  p-3 lg:p-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="flex flex-row justify-between w-full">
-              <h2 className="text-3xl text-gray-300 lg:text-[2rem] mb-5">
+              <h2 className="text-xl text-gray-300 lg:text-[2rem] mb-5">
                 2022 - 2026
               </h2>
               <BgText
@@ -46,7 +46,7 @@ const EduHero = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <div className="inline-block mb-2">
+                <div className="inline-block">
                   <BgText
                     bgColor="bg-purple-700"
                     bgTitle="Current Semester"

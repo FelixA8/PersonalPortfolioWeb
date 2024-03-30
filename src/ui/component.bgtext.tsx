@@ -32,7 +32,7 @@ function BgText({
         </div>
       </div>
       {showText && (
-        <p className="text-lg text-gray-300 xl:text-lg mb-5">{bgText}</p>
+        <p className="text-md text-gray-300 xl:text-lg mb-5">{bgText}</p>
       )}
     </>
   );

@@ -19,7 +19,7 @@ export function GlobalNav() {
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
         >
-          <p className="h-auto w-full text-gray-300 hover:text-gray-400 transition-all text-3xl">
+          <p className="h-auto w-full h text-gray-300 hover:text-gray-400 transition-all text-xl lg:text-3xl">
             Website Portfolio
           </p>
         </Link>

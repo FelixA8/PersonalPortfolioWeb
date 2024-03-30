@@ -19,12 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="[color-scheme:dark] w-full">
+    <html lang="en" className="[color-scheme:dark] overflow-x-hidden">
       <meta
         name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <body className="bg-gray-1100 overflow-y-scroll pb-36">
+      <body className="bg-gray-1100 overflow-y-scroll pb-36 overflow-x-hidden">
         <GlobalNav />
         <div className="lg:pl-72">
           <div className="mx-6">

@@ -34,7 +34,7 @@ const PastProjectList: React.FC<{ path: string }> = ({ path }) => {
                   <p className="text-gray-300 text-xl text-start font-semibold py-3 px-3 border-t border-gray-700">
                     {project.name}
                   </p>
-                  <ul className="flex flex-wrap py-3 px-3 gap-2">
+                  <ul className="flex flex-wrap pb-3 px-3 gap-2">
                     {project.framework.map((code) => (
                       <li key={code}>
                         <BgText

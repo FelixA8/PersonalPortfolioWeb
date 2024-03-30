@@ -24,7 +24,7 @@ const Hero = () => {
           </button>
         </div>
         <div className="w-full lg:w-1/2 self-end">
-          <div className="relative mt-10 lg:mt-9 lg:right-0">
+          <div className="relative mt-32 lg:mt-9 lg:right-0">
             <Image
               src="https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com/profile.png"
               className="max-w-full mx-auto lg:scale-75 xl:scale-125"

@@ -30,13 +30,13 @@ const PastProjectSlug: React.FC<{ path: string }> = ({ path }) => {
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
           Project Detail
         </h4>
-        <h2 className="font-bold text-3xl mb-10 lg:text-[2rem] pr-[4rem]">
+        <h2 className="font-bold text-3xl mb-10 lg:text-[2rem] lg:pr-[4rem]">
           {project.name}
         </h2>
         <PaginationCarouselCard cards={project.image} />
         <p className="text-gray-300 mt-10 text-lg">{project.description}</p>
         <h4 className="font-semibold text-2xl mt-10">Created using:</h4>
-        <ul className="flex flex-wrap mt-5 gap-5">
+        <ul className="flex flex-wrap mt-5 gap-2 lg:gap-5">
           {project.framework.map((code) => (
             <li key={code}>
               <BgText bgTitle={code} bgText="" showText={false} bgColor="" />

@@ -16,7 +16,7 @@ function BgText({
 
   return (
     <>
-      <div className="inline-block mb-2 z-30">
+      <div className="inline-block z-30">
         <div
           className={` ${
             bgTitle === "Firebase" ||

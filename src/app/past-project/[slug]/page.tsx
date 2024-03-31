@@ -5,7 +5,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 const Page = () => {
   const searchParams = usePathname();
   return <>
-    <PastProjectSlug path={searchParams} />
+    <PastProjectSlug path={(searchParams as string)} />
   </>;
 };
 

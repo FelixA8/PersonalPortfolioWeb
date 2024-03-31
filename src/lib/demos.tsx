@@ -35,20 +35,16 @@ export const demos: { name: string; items: Item[] }[] = [
     ],
   },
   {
-    name: 'Skills',
+    name: 'Others',
     items: [
       {
-        name: 'Web Development',
-        slug: 'web-development',
+        name: 'Web Profile',
+        slug: 'web-profile',
       },
       {
-        name: 'Android Development ',
-        slug: 'android-development',
+        name: 'Journey',
+        slug: 'learning-journey',
       },
-      {
-        name: 'UI/UX Design',
-        slug: 'next-js',
-      }
     ],
   },
   {

@@ -25,7 +25,7 @@ const PastProjectSlug: React.FC<{ path: string }> = ({ path }) => {
   }
 
   return (
-    <section className="pt-10 pb-16 mx-6">
+    <section className="pt-10 pb-16 mx-6">  
       <div className="container mx-auto">
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
           Project Detail

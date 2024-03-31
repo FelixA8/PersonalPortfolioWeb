@@ -392,4 +392,4 @@ const BinusLogo = () => {
   );
 };
 
-export default BinusLogo
+export default BinusLogo;

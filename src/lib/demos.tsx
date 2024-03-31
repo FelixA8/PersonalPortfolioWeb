@@ -51,16 +51,12 @@ export const demos: { name: string; items: Item[] }[] = [
     name: 'Contact',
     items: [
       {
-        name: 'GitHub',
-        slug: 'github',
+        name: 'Send Email',
+        slug: 'send-email',
       },
       {
-        name: 'Gmail',
-        slug: 'gmail',
-      },
-      {
-        name: 'LinkedIn',
-        slug: 'linkedin',
+        name: 'Donate',
+        slug: 'donate',
       },
     ],
   },

@@ -44,7 +44,6 @@ export function GlobalNav() {
           hidden: !isOpen,
         })}
       >
-
         <nav className="space-y-6 px-2 pb-24 pt-5">
           {demos.map((section) => {
             return (
@@ -53,10 +52,10 @@ export function GlobalNav() {
                   <div>{section.name}</div>
                 </div>
                 <div className="space-y-1">
-                    {section.items.map((item) => 
-                      <GlobalNavItem item={item} key={item.slug} close={close} />
-                    )}
-                  </div>
+                  {section.items.map((item) => (
+                    <GlobalNavItem item={item} key={item.slug} close={close} />
+                  ))}
+                </div>
               </div>
             );
           })}
@@ -87,7 +86,6 @@ function GlobalNavItem({
           "text-white": isActive,
         }
       )}
-
     >
       {item.name}
     </Link>

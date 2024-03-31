@@ -11,7 +11,7 @@ const AboutMe = () => {
           <h2 className="font-bold text-3xl mb-5 lg:text-[2rem] lg:pr-[4rem]">
             Road on becoming a world class developer
           </h2>
-          <p className="text-base text-gray-300 lg:text-lg pr-[4rem]">
+          <p className="text-base text-gray-300 lg:text-lg lg:pr-[4rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
             blanditiis reiciendis eligendi alias quo rem enim provident expedita
             velit cum?

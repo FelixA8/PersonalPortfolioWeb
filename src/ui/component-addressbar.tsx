@@ -6,10 +6,10 @@ import { usePathname, useSearchParams } from "next/navigation";
 function Params() {
   const searchParams = useSearchParams();
 
-  return searchParams.toString().length !== 0 ? (
+  return searchParams!.toString().length !== 0 ? (
     <div className="px-2 text-gray-500">
       <span>?</span>
-      {Array.from(searchParams.entries()).map(([key, value], index) => {
+      {Array.from(searchParams!.entries()).map(([key, value], index) => {
         return (
           <React.Fragment key={key}>
             {index !== 0 ? <span>&</span> : null}

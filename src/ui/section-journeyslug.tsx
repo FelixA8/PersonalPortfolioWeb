@@ -4,10 +4,7 @@ import SectionCard from "./component-sectioncard";
 
 const JourneySlug: React.FC<{ path: string }> = ({ path }) => {
   const words = path.split("/");
-  const parentPath = words[words.length - 2];
   const currPath = words[words.length - 1];
-  console.log(path);
-  console.log(parentPath);
   const res = findProject(currPath);
   var journey: Journey;
   if (res === false) {

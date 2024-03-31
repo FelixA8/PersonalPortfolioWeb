@@ -4,11 +4,10 @@ import PaginationCarouselCard from "./component-paginationcarousel";
 import BgText from "./component.bgtext";
 
 const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
+
   const words = path.split("/");
   const parentPath = words[words.length - 2];
   const currPath = words[words.length - 1];
-  console.log(path);
-  console.log(parentPath);
   const res = findProject(currPath, parentPath);
   var project: Project;
   if (res === false) {

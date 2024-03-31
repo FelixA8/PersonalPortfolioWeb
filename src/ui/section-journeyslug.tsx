@@ -2,7 +2,7 @@ import Error from "next/error";
 import { Journey, listJourneys } from "../lib/journey";
 import SectionCard from "./component-sectioncard";
 
-const JourneySlug: React.FC<{ path: string }> = ({ path }) => {
+const JourneySlug: React.FC<{ path: any }> = ({ path }) => {
   const words = path.split("/");
   const currPath = words[words.length - 1];
   const res = findProject(currPath);

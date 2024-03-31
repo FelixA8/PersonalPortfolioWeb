@@ -4,9 +4,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 const Page = () => {
   const searchParams = usePathname();
-  return <>
-    <PastProjectSlug path={(searchParams as string)} />
-  </>;
+  console.log(searchParams);
+  return (
+    <>
+      <PastProjectSlug path={searchParams} />
+    </>
+  );
 };
 
 export default Page;

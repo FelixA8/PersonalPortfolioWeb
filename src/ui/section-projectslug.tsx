@@ -3,12 +3,12 @@ import { Project, listCurrentProject, listPastProject } from "../lib/project";
 import PaginationCarouselCard from "./component-paginationcarousel";
 import BgText from "./component.bgtext";
 
-const PastProjectSlug: React.FC<{ path: string }> = ({ path }) => {
+const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
   const words = path.split("/");
   const parentPath = words[words.length - 2];
   const currPath = words[words.length - 1];
-  console.log(path)
-  console.log(parentPath)
+  console.log(path);
+  console.log(parentPath);
   const res = findProject(currPath, parentPath);
   var project: Project;
   if (res === false) {
@@ -25,7 +25,7 @@ const PastProjectSlug: React.FC<{ path: string }> = ({ path }) => {
   }
 
   return (
-    <section className="pt-10 pb-16 mx-6">  
+    <section className="pt-10 pb-16 mx-6">
       <div className="container mx-auto">
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
           Project Detail
@@ -51,20 +51,20 @@ const PastProjectSlug: React.FC<{ path: string }> = ({ path }) => {
 };
 
 function findProject(currPath: string, parentPath: string): Project | boolean {
-  if(parentPath === "past-project") {
+  if (parentPath === "past-project") {
     for (const project of listPastProject) {
       if (project.slug === currPath) {
         return project;
       }
     }
-  } else if(parentPath === "current-project") {
+  } else if (parentPath === "current-project") {
     for (const project of listCurrentProject) {
       if (project.slug === currPath) {
         return project;
       }
     }
   }
-  
+
   return false;
 }
 

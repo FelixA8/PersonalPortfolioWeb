@@ -58,7 +58,7 @@ const SendEmailHero = () => {
         </h4>
         <form
           onSubmit={handleSubmit}
-          className="max-w-sm sm:max-w-full w-1/2 mx-auto"
+          className=" w-full lg:w-1/2 mx-auto"
         >
           <div className="mb-5">
             <label

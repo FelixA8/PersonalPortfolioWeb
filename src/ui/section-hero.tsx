@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -19,9 +20,9 @@ const Hero = () => {
             expedita deleniti consequuntur. Maiores earum eveniet sunt ab cumque
             minus architecto.
           </p>
-          <button className="px-6 py-3 text-xl bg-cyan-500 hover:bg-cyan-800 rounded-lg text-gray-100 hover:text-gray-400 transition duration-300 font-bold mb-5">
+          <Link href="/send-email" className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Contact me
-          </button>
+          </Link>
         </div>
         <div className="w-full lg:w-1/2 self-end">
           <div className="relative mt-32 lg:mt-9 lg:right-0">

@@ -56,13 +56,10 @@ const SendEmailHero = () => {
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-10 text-center">
           Send me a message
         </h4>
-        <form
-          onSubmit={handleSubmit}
-          className=" w-full lg:w-1/2 mx-auto"
-        >
+        <form onSubmit={handleSubmit} className=" w-full lg:w-1/2 mx-auto">
           <div className="mb-5">
             <label
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
               htmlFor="name"
             >
               Name

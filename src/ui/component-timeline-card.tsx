@@ -19,23 +19,23 @@ const TimelineCard: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <>
-      <time className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex">
+      <time className="text-lg font-semibold text-white mb-3 flex">
         {experienceDate}
       </time>
-      <div className="text-gray-600 dark:text-gray-400">
+      <div className="text-gray-400">
         <div className="flex mb-5">
           <div className="text-base font-normal">
-            <span className="font-medium text-gray-900 dark:text-white">
+            <span className="font-medium text-white">
               {experienceRole}
             </span>{" "}
             of{" "}
-            <span className="font-medium text-gray-900 dark:text-white">
+            <span className="font-medium text-white">
               {experienceName}
             </span>{" "}
             {experienceCommit !== 0 && (
               <span>
                 committed in{" "}
-                <span className="font-medium text-gray-900 dark:text-white">
+                <span className="font-medium text-white">
                   {" "}
                   {experienceCommit} events
                 </span>

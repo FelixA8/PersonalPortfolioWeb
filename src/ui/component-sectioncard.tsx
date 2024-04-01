@@ -44,10 +44,10 @@ const SectionCard: React.FC<JounneyProps> = ({ name, description, logo }) => {
     picture = <div></div>;
   }
   return (
-    <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-wrap items-center gap-5">
+    <div className="p-5 mb-4 border  rounded-lg bg-gray-800 border-gray-700 flex flex-wrap items-center gap-5">
       <div className="w-20">{picture}</div>
       <div className="flex flex-col ">
-        <p className="font-medium text-gray-900 dark:text-white">{name}</p>
+        <p className="font-medium  text-white">{name}</p>
         <p className="text-gray-400 font-semibold">{description}</p>
       </div>
     </div>

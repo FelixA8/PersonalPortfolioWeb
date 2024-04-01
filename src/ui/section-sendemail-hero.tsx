@@ -18,6 +18,7 @@ const SendEmailHero = () => {
     subject: "",
     message: "",
   });
+  const [buttonState, setButtonState] = useState(false);
   const handleChange = (e: any) => {
     const { name, value } = e.target;
 
@@ -26,6 +27,7 @@ const SendEmailHero = () => {
   const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
+    setButtonState(true);
     const response = await fetch("/api/submit", {
       method: "POST",
       headers: {
@@ -37,7 +39,9 @@ const SendEmailHero = () => {
     if (response.ok) {
       notifySuccess();
     } else {
+      notifyFail();
     }
+    setButtonState(false);
 
     setFormData({
       email: "",
@@ -65,7 +69,7 @@ const SendEmailHero = () => {
               Name
             </label>
             <input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="border text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
               type="text"
               name="name"
               id="name"
@@ -77,12 +81,12 @@ const SendEmailHero = () => {
           <div className="mb-5">
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Email
             </label>
             <input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="border text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
               type="email"
               name="email"
               id="name"
@@ -94,12 +98,12 @@ const SendEmailHero = () => {
           <div className="mb-5">
             <label
               htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white"
             >
               Subject
             </label>
             <input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="border text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
               type="text"
               name="subject"
               id="subject"
@@ -111,12 +115,12 @@ const SendEmailHero = () => {
           <div className="mb-5">
             <label
               htmlFor="message"
-              className="block text-sm mb-2 font-medium text-gray-900 dark:text-white"
+              className="block text-sm mb-2 font-medium text-white"
             >
               Message
             </label>
             <textarea
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="border text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
               name="message"
               id="message"
               onChange={handleChange}
@@ -124,8 +128,13 @@ const SendEmailHero = () => {
               required
             />
           </div>
-          <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Submit
+          <button
+            disabled={buttonState}
+            className={`border text-sm rounded-lg mt-10  block w-full p-2.5 ${
+              buttonState ? "bg-gray-900" : "bg-gray-700"
+            } border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500`}
+          >
+            {buttonState ? "Please wait..." : "Submit"}
           </button>
         </form>
         <ToastContainer />

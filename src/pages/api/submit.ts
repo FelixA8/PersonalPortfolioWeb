@@ -30,13 +30,17 @@ export default async function handler(
     auth,
     version: "v4",
   });
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: "1z_rm9-TJEj97Pt2QGeeioj7qowg2GZYMftrnUZzbwUM",
-    range: "A1:D1",
-    valueInputOption: "USER_ENTERED",
-    requestBody: {
-      values: [[body.name, body.email, body.subject, body.message]],
-    },
-  });
+  try {
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: "1z_rm9-TJEj97Pt2QGeeioj7qowg2GZYMftrnUZzbwUM",
+      range: "A1:D1",
+      valueInputOption: "USER_ENTERED",
+      requestBody: {
+        values: [[body.name, body.email, body.subject, body.message]],
+      },
+    });
+  } catch (e) {
+    return res.status(500)
+  }
   return res.status(200).json({});
 }

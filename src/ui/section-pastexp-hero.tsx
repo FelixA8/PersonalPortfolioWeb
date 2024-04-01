@@ -17,7 +17,7 @@ const PastExperienceHero = () => {
           {listPastExperience.map((experience) => (
             <div
               key={experience.experienceName}
-              className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+              className="p-5 mb-4 border  rounded-lg bg-gray-800 border-gray-700"
             >
               <li className="mb-10">
                 <TimelineCard

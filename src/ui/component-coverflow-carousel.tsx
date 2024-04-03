@@ -1,15 +1,12 @@
-"use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import "@/src/styles/globals.css";
-import Image from "next/image";
-import { Certificate } from "../lib/certificate";
+import Image from "next/legacy/image";
 
-const CarouselCoverFlow: React.FC<{ items: Certificate[] }> = ({ items }) => {
+const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
   return (
     <Swiper
       effect={"coverflow"}
@@ -29,15 +26,23 @@ const CarouselCoverFlow: React.FC<{ items: Certificate[] }> = ({ items }) => {
     >
       {items.map((item: any) => (
         <SwiperSlide key={item.title}>
-          <Image
-            fill={true}
-            style={{ objectFit: "cover" }}
-            alt="Certificate"
-            src={
+          <a
+            target="_blank"
+            href={
               "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
               item.image
             }
-          />
+          >
+            <Image
+              layout="fill"
+              objectFit="cover"
+              alt="Certificate"
+              src={
+                "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
+                item.image
+              }
+            />
+          </a>
         </SwiperSlide>
       ))}
     </Swiper>

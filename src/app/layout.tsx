@@ -25,6 +25,7 @@ export default function RootLayout({
       />
       <body className="bg-gray-1100 overflow-y-scroll pb-36 overflow-x-hidden">
         <GlobalNav />
+        <div id="modal-root"></div>
         <div className="lg:pl-72">
           <div className="mx-6">
             <div className="container mx-auto w-full space-y-8 pt-20 lg:py-8">
@@ -35,9 +36,9 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-
           {children}
         </div>
+        
       </body>
     </html>
   );

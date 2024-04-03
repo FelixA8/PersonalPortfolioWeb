@@ -23,7 +23,7 @@ const ParticlesComponent = (props) => {
         opacity: 1,
       },
       backgroundMask: {
-        composite: "destination-out",
+        composite: "source-out",
         cover: {
           color: {
             value: "#fff",
@@ -85,40 +85,15 @@ const ParticlesComponent = (props) => {
               },
               collisions: {
                 enable: false,
-                bounce: {
-                  horizontal: {
-                    random: {},
-                  },
-                  vertical: {
-                    random: {},
-                  },
-                },
-                overlap: {},
               },
               links: {
                 enable: false,
-                shadow: {},
-                triangles: {},
               },
               move: {
                 outModes: {
                   default: "destroy",
                 },
                 speed: 2,
-                angle: {},
-                attract: {
-                  rotate: {},
-                },
-                distance: {},
-                gravity: {},
-                path: {
-                  delay: {
-                    random: {},
-                  },
-                },
-                trail: {
-                  fill: {},
-                },
               },
               size: {
                 value: {
@@ -132,76 +107,7 @@ const ParticlesComponent = (props) => {
                   startValue: "min",
                   destroy: "max",
                 },
-                random: {},
               },
-              bounce: {
-                horizontal: {
-                  random: {},
-                },
-                vertical: {
-                  random: {},
-                },
-              },
-              destroy: {
-                split: {
-                  factor: {
-                    random: {},
-                  },
-                  rate: {
-                    random: {},
-                  },
-                },
-              },
-              life: {
-                delay: {
-                  random: {},
-                },
-                duration: {
-                  random: {},
-                },
-              },
-              number: {
-                density: {},
-              },
-              opacity: {
-                animation: {},
-                random: {},
-              },
-              roll: {
-                darken: {},
-                enlighten: {},
-              },
-              rotate: {
-                animation: {},
-              },
-              shadow: {
-                offset: {},
-              },
-              shape: {},
-              stroke: {
-                color: {
-                  value: "",
-                  animation: {
-                    count: 0,
-                    enable: false,
-                    offset: {
-                      max: 0,
-                      min: 0,
-                    },
-                    speed: 0,
-                    decay: 0,
-                    sync: false,
-                  },
-                },
-              },
-              tilt: {
-                animation: {},
-              },
-              twinkle: {
-                lines: {},
-                particles: {},
-              },
-              wobble: {},
             },
           },
           attract: {
@@ -423,7 +329,7 @@ const ParticlesComponent = (props) => {
         },
         number: {
           density: {
-            enable: true,
+            enable: false,
             width: 1920,
             height: 1080,
           },
@@ -431,7 +337,7 @@ const ParticlesComponent = (props) => {
             mode: "delete",
             value: 0,
           },
-          value: 100,
+          value: 200,
         },
         opacity: {
           value: {
@@ -487,38 +393,6 @@ const ParticlesComponent = (props) => {
         },
         stroke: {
           width: 0,
-          color: {
-            value: "",
-            animation: {
-              h: {
-                count: 0,
-                enable: false,
-                speed: 0,
-                decay: 0,
-                delay: 0,
-                sync: false,
-                offset: 0,
-              },
-              s: {
-                count: 0,
-                enable: false,
-                speed: 1,
-                decay: 0,
-                delay: 0,
-                sync: true,
-                offset: 0,
-              },
-              l: {
-                count: 0,
-                enable: false,
-                speed: 1,
-                decay: 0,
-                delay: 0,
-                sync: true,
-                offset: 0,
-              },
-            },
-          },
         },
         zIndex: {
           value: 0,

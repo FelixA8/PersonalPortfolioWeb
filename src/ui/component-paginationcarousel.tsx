@@ -12,9 +12,7 @@ const PaginationCarouselCard: React.FC<CarouselCardProps> = ({ cards }) => {
   return (
     <Swiper
       spaceBetween={30}
-      pagination={{
-        clickable: true,
-      }}
+      pagination={{clickable: true, bulletClass: `swiper-pagination-bullet`,}}
       modules={[Pagination]}
       className="lg:w-3/4"
     >

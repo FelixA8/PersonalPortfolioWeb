@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import "@/src/styles/globals.css";
 import Image from "next/image";
-import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
 
 const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
   return (
@@ -15,39 +15,30 @@ const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
-      slidesPerView={"auto"}
+      slidesPerView={2}
       coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
+        rotate: 10,
+        stretch: 50,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       }}
-      pagination={{ clickable: true, bulletClass: `swiper-pagination-bullet` }}
-      modules={[EffectCoverflow, Pagination]}
-      className="mySwiper flex items-center"
+      modules={[EffectCoverflow]}
+      className="mySwiper lg:scale-100 scale-150"
     >
       {items.map((item: any) => (
-        <SwiperSlide key={item.title}>
-          <a
-            target="_blank"
-            href={
+        <SwiperSlide className="flex justify-center">
+          <Image
+          onClick={():void => {window.open(`https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com${item.preview}`)}}
+          width={480}
+          height={357}
+          objectFit="cover"
+          alt="d"
+            src={
               "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
               item.image
             }
-            className="flex items-center"
-          >
-            <Image
-              width={480}
-              height={357}
-              objectFit="fill"
-              alt="Certificate"
-              src={
-                "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
-                item.image
-              }
-            />
-          </a>
+          />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -7,6 +7,7 @@ import ReactJSLogo from "./svg/react";
 import TailwindLogo from "./svg/tailwind";
 import TypeScriptLogo from "./svg/typescript";
 import VercelLogo from "./svg/vercel";
+import GoogleCloudIcon from "./svg/cloud-console";
 
 const WebDevHero = () => {
   return (
@@ -16,32 +17,36 @@ const WebDevHero = () => {
           Web Profile
         </h4>
         <div className="flex flex-wrap gap-[5%] gap-y-10">
-          <div className="w-full xl:w-[70%] shadow-lg bg-black shadow-gray-900 flex flex-col p-5 rounded-xl">
+          <div className="w-full xl:w-[70%] shadow-lg bg-black shadow-gray-900 flex flex-col p-5 rounded-xl justify-center">
             <h3 className="font-semibold uppercase text-white text-xl mb-10  text-center xl:text-start">
               Created with:
             </h3>
             <div className="flex flex-wrap justify-around gap-7 lg:justify-between">
-              <div className="w-20 xl:w-[8rem] xl:h-[8rem]">
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
                 <NextJSLogo />
                 <p className="text-center mt-5 font-light text-lg">Next.js</p>
               </div>
-              <div className="w-20 xl:w-[8rem] xl:h-[8rem]">
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
                 <TypeScriptLogo />
                 <p className="text-center mt-5 font-light text-lg">
                   TypeScript
                 </p>
               </div>
-              <div className="w-20 xl:w-[8rem] xl:h-[8rem]">
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
                 <ReactJSLogo />
                 <p className="text-center mt-5 font-light text-lg">React JS</p>
               </div>
-              <div className="w-20 xl:w-[8rem] xl:h-[8rem]">
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
                 <TailwindLogo />
                 <p className="text-center mt-5 font-light text-lg">Tailwind</p>
               </div>
-              <div className="w-20 xl:w-[8rem] xl:h-[8rem]">
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
                 <AmazonS3Icon />
                 <p className="text-center mt-5 font-light text-lg">AWS S3</p>
+              </div>
+              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+                <GoogleCloudIcon />
+                <p className="text-center mt-5 font-light text-lg">Cloud</p>
               </div>
             </div>
           </div>
@@ -62,7 +67,7 @@ const WebDevHero = () => {
             <p className="text-center mt-5 font-light text-lg">Vercel</p>
           </div>
           <div className="w-full xl:w-[35%] flex flex-col justify-between gap-10">
-            <div className="w-full justify-center xl:justify-start shadow-lg bg-black shadow-gray-900 flex flex-wrap items-center gap-5 p-10 rounded-xl">
+            <div className="w-full justify-center xl:justify-center shadow-lg bg-black shadow-gray-900 flex flex-wrap items-center gap-5 p-10 rounded-xl">
               <div className="w-10 xl:w-[3rem] xl:h-[3rem]">
                 <GitHubLogo />
               </div>

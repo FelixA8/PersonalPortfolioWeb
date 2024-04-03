@@ -39,7 +39,7 @@ const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
             <Image
               fill={true}
               objectFit="cover"
-              alt="d"
+              alt="Certificate"
               src={
                 "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
                 item.image

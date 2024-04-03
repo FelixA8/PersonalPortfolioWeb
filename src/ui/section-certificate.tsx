@@ -8,8 +8,8 @@ const CertificateSection = () => {
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-5 mt-8 text-center lg:text-start">
           My Certificate
         </h4>
+        <CarouselCoverFlow items={listCertificate} />
       </div>
-      <CarouselCoverFlow items={listCertificate} /> 
     </section>
   );
 };

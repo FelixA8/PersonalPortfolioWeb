@@ -22,7 +22,7 @@ const Preview = () => {
                   (index % 2 !== 0 && "flex-row-reverse")
                 }
               >
-                <div className="w-full xl:w-1/3 border rounded-lg border-gray-700 mb-5">
+                <div className="w-full xl:w-1/3 border rounded-lg border-gray-700">
                   <Image
                     className="w-fit"
                     src={

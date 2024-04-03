@@ -9,40 +9,26 @@ import Image from "next/legacy/image";
 const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
   return (
     <Swiper
-      effect={"coverflow"}
-      grabCursor={true}
-      centeredSlides={true}
       slidesPerView={"auto"}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
+      centeredSlides={true}
+      spaceBetween={30}
+      pagination={{
+        clickable: true,
       }}
-      pagination={{ clickable: true, bulletClass: `swiper-pagination-bullet` }}
-      modules={[EffectCoverflow, Pagination]}
+      modules={[Pagination]}
       className="mySwiper"
     >
       {items.map((item: any) => (
         <SwiperSlide key={item.title}>
-          <a
-            target="_blank"
-            href={
+          <Image
+            layout="fill"
+            objectFit="cover"
+            alt="Certificate"
+            src={
               "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
               item.image
             }
-          >
-            <Image
-              layout="fill"
-              objectFit="cover"
-              alt="Certificate"
-              src={
-                "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
-                item.image
-              }
-            />
-          </a>
+          />
         </SwiperSlide>
       ))}
     </Swiper>

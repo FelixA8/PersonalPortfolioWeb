@@ -27,7 +27,7 @@ const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
       className="mySwiper lg:scale-100 scale-150"
     >
       {items.map((item: any) => (
-        <SwiperSlide className="flex !justify-center">
+        <SwiperSlide className="!flex !justify-center">
           <Image
           onClick={():void => {window.open(`https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com${item.preview}`)}}
           width={480}

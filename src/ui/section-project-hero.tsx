@@ -1,15 +1,15 @@
-const PastProject: React.FC<{ path: string }> = ({ path }) => {
+const ProjectHeader: React.FC<{ path: string }> = ({ path }) => {
   var title = ""
   var description = ""
   if(path === "/past-project") {
     title = "Past Project"
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aliquam harum nisi officia eaque exercitationem quos, quibusdamomnis earum officiis vitae suscipit iste maiores eligendi saepe dolore necessitatibus dicta maxime doloribus odit, consequuntur a! Omnis doloribus reiciendis quis laborum enim?"
+    description = "This section describes my previous projects that has been created. Feel free to check the project and the source code :D"
   } else if(path === "/current-project") {
     title = "Current Project"
-    description = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quae placeat ipsam deserunt quas amet veritatis vitae distinctio voluptatibus nostrum aliquam accusantium nemo beatae eum fugiat porro ad a sit cum, quis adipisci incidunt sapiente assumenda. Error inventore incidunt optio!"
+    description = "This section shows my current projects that I'm working on! Of course this is just some projects that I can publically show. There are others that are still in secret 🤫"
   }
   return (
-    <section className="pt-10 pb-16 mx-6">
+    <section className="pt-10 mx-6">
       <div className="container mx-auto flex flex-wrap ">
         <div className="w-full">
           <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
@@ -24,4 +24,4 @@ const PastProject: React.FC<{ path: string }> = ({ path }) => {
   );
 };
 
-export default PastProject;
+export default ProjectHeader;

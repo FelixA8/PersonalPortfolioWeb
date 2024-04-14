@@ -8,23 +8,20 @@ const AboutMe = () => {
           <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
             About Me
           </h4>
-          <h2 className="font-bold text-3xl mb-5 lg:text-[2rem] lg:pr-[4rem]">
+          <h2 className="font-bold xl:text-3xl mb-5 lg:text-2xl lg:pr-[4rem]">
             Road on becoming a world class developer
           </h2>
           <p className="text-base text-gray-300 lg:text-lg lg:pr-[4rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            blanditiis reiciendis eligendi alias quo rem enim provident expedita
-            velit cum?
+            As a Learner, my mission is to create a sufficient and productive
+            app for all people, helping many people.
           </p>
         </div>
         <div className="w-full mt-10 lg:w-1/2">
-          <h2 className="font-bold text-3xl mb-5 lg:text-[2rem] lg:pr-[4rem]">
-            Let's be friend
+          <h2 className="font-bold text-3xl mb-5 lg:text-2xl lg:pr-[4rem]">
+            Let's be friend!
           </h2>
           <p className="text-base text-gray-300 lg:text-lg lg:pr-[4rem] mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            blanditiis reiciendis eligendi alias quo rem enim provident expedita
-            velit cum?
+            Get to know me from my social media.
           </p>
           <ListContact />
         </div>

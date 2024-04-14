@@ -2,9 +2,9 @@ import Error from "next/error";
 import { Project, listCurrentProject, listPastProject } from "../lib/project";
 import PaginationCarouselCard from "./component-paginationcarousel";
 import BgText from "./component.bgtext";
+import Link from "next/link";
 
 const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
-
   const words = path.split("/");
   const parentPath = words[words.length - 2];
   const currPath = words[words.length - 1];
@@ -42,6 +42,26 @@ const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
             </li>
           ))}
         </ul>
+        <div className="mt-10 flex flex-col xl:flex-row w-full gap-2 lg:gap-5">
+          <Link
+            target="_blank"
+            href={project.sourceLink}
+            className={
+              "text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 py-1 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+            }
+          >
+            Source Code
+          </Link>
+          {project.publishLink !== "" && (
+            <Link
+              target="_blank"
+              href={project.publishLink}
+              className=" text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 py-1 text-center bg-green-600 hover:bg-green-700 focus:ring-green-800"
+            >
+              Preview
+            </Link>
+          )}
+        </div>
         <h4 className="font-semibold text-2xl mt-10">Development duration:</h4>
         <p className="text-gray-300 mt-5 text-lg">{project.duration}</p>
       </div>

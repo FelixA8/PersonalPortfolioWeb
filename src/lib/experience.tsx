@@ -90,4 +90,13 @@ export const ongoingExperiences: {
       "As a mentor, I help student to Teaching students who are struggling to maintain their grades, Create learning resources and Implementing effective teaching strategies",
     event: [],
   },
+  {
+    experienceDate: "April 2024 - Present",
+    experienceRole: "Member",
+    experienceName: "Eureeka Binus",
+    experienceCommit: 0,
+    experienceDescription:
+      "As a member, I am expected to participate in Software Engineering Competitions from any sizes (Regional competitions to International Competitions).",
+    event: [],
+  },
 ];

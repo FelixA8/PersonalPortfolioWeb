@@ -39,7 +39,7 @@ const JourneyHero: React.FC<{ path: string }> = ({ path }) => {
                 <div className="absolute inset-0 w-full lg:w-full opacity-30 scale-[0.3] z-40 lg:scale-[0.35]">
                   {logo}
                 </div>
-                <p className="text-center text-3xl font-bold text-gray-300">
+                <p className="text-center text-3xl font-bold text-gray-100 px-5">
                   {journey.journey.thumbnailTitle}
                 </p>
               </Link>

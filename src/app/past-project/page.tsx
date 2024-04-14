@@ -1,10 +1,10 @@
-import PastProject from "@/src/ui/section-project-hero";
+import ProjectHeader from "@/src/ui/section-project-hero";
 import PastProjectList from "@/src/ui/section-project-list";
 
 export default function Page() {
   return (
     <>
-      <PastProject path={"/past-project"}/>
+      <ProjectHeader path={"/past-project"}/>
       <PastProjectList path={"/past-project"}/>
     </>
   );

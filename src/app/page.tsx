@@ -3,6 +3,7 @@ import Hero from "../ui/section-hero";
 import AboutMe from "../ui/section-about-me";
 import Preview from "../ui/section-preview";
 import CertificateSection from "../ui/section-certificate";
+import Footer from "../ui/component-footer";
 
 export default function Page() {
   return (
@@ -11,6 +12,7 @@ export default function Page() {
       <AboutMe />
       <Preview />
       <CertificateSection />
+      <Footer />
     </div>
   );
 }

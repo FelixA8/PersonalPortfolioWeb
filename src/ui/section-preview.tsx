@@ -7,7 +7,7 @@ import Link from "next/link";
 const Preview = () => {
   const pastProject = listPastProject;
   return (
-    <section className="pb-16 pt-20 bg-gray-950 px-6">
+    <section className="pb-16 pt-8 bg-gray-950 px-6">
       <div className="container mx-auto">
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-5 mt-8 text-center lg:text-start">
           My Finished Project
@@ -22,7 +22,7 @@ const Preview = () => {
                   (index % 2 !== 0 && "flex-row-reverse")
                 }
               >
-                <div className="w-full xl:w-1/3 border rounded-lg border-gray-700">
+                <div className="w-full xl:w-1/3 border rounded-lg border-gray-700 mb-5 xl:mb-0">
                   <Image
                     className="w-fit"
                     src={
@@ -37,10 +37,10 @@ const Preview = () => {
                 <div
                   className={
                     (index % 2 !== 0 && "xl:items-end") +
-                    " w-full xl:w-2/3 xl:px-10 flex flex-col"
+                    " w-full xl:w-2/3 xl:px-10 flex flex-col mb-10"
                   }
                 >
-                  <h4 className="text-3xl xl:text-[2rem] font-bold">
+                  <h4 className="text-xl lg:text-3xl xl:text-[2rem] font-bold">
                     {project.name}
                   </h4>
                   <p className="text-gray-300 mt-3">Created using:</p>
@@ -66,7 +66,7 @@ const Preview = () => {
                       target="_blank"
                       href={project.sourceLink}
                       className={
-                        "text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+                        "text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 py-1 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
                       }
                     >
                       Source Code
@@ -75,7 +75,7 @@ const Preview = () => {
                       <Link
                         target="_blank"
                         href={project.publishLink}
-                        className=" text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 px-5 py-2.5 text-center bg-green-600 hover:bg-green-700 focus:ring-green-800"
+                        className=" text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full xl:w-1/4 py-1 text-center bg-green-600 hover:bg-green-700 focus:ring-green-800"
                       >
                         Preview
                       </Link>
@@ -86,8 +86,11 @@ const Preview = () => {
             );
           }
         })}
-        <p className="text-gray-300 text-center opacity-40 mt-5">
-          See more projects on project page...
+        <p className="text-gray-300 text-center mt-5">
+          <span className="opacity-40">See more projects on </span>{" "}
+          <Link href={"/past-project"} className="text-white hover:cursor-pointer hover:text-gray-100">
+            project section
+          </Link>
         </p>
       </div>
     </section>

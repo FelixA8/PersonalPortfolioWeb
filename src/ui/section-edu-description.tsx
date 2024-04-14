@@ -3,18 +3,23 @@ const EduDescription = () => {
     <section className="pt-10 pb-16 mx-6">
       <div className="container mx-auto flex flex-wrap">
         <p className="text-base text-gray-300 lg:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere
-          quasi tenetur. Porro ad libero atque modi voluptatum tenetur hic nisi
-          debitis excepturi magni illo, a illum similique incidunt odio odit
-          blanditiis culpa consequatur unde aliquid! Adipisci architecto at
-          mollitia iure ullam consequatur, inventore laudantium corporis nemo?
-          Nobis aspernatur vel quod laudantium sit accusantium incidunt in
-          repellendus asperiores, aperiam, possimus nihil. Cum beatae non, culpa
-          sit quae accusamus dignissimos ipsam fuga facilis quibusdam odit,
-          sapiente ducimus doloremque quis architecto soluta consectetur
-          praesentium recusandae! Quibusdam laborum officiis nisi recusandae
-          consectetur, est corporis at fugiat, molestias natus aut
-          necessitatibus expedita ducimus! Provident?
+          Binus University is my "green flag" Campus becuase it suits my major
+          which is Mobile Application and Technology. Binus also shares the
+          knowledge and skills necessary to thrive in the dynamic field of
+          mobile technology. With a focus on both theoretical understanding and
+          practical application, the curriculum is carefully crafted to meet the
+          demands of the rapidly evolving mobile industry (Even we learn Flutter
+          as a subject) which enhance my hard skills.
+        </p>
+        <p className="text-base text-gray-300 lg:text-lg mt-3">
+          Besides the curriculum, I also joined some organizations such as{" "}
+          <span className="italic">
+            Keluarga Mahasiswa Buddhist Dhammavaddhana
+          </span>{" "}
+          (KMBD), Data Science Club (DSC) and Eureeka that focuses on Software
+          Engineering. This organizations teach me the soft skills that is
+          required such as Critical Thinking, Team Work, Public Speaking and
+          more...
         </p>
       </div>
     </section>

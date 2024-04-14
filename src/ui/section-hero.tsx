@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TypingEffect from "./component-typingeffect";
 
 const Hero = () => {
   return (
@@ -12,15 +13,16 @@ const Hero = () => {
           <h1 className="text-cyan-500 font-semibold text-3xl tracking-wide mb-2 lg:text-5xl">
             Felix Anderson
           </h1>
-          <p className="text-gray-300 text-xl tracking-wide mb-5 lg:text-2xl">
-            Student | Developer
-          </p>
+          <TypingEffect />
           <p className="text-gray-300 text-base tracking-wide mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            expedita deleniti consequuntur. Maiores earum eveniet sunt ab cumque
-            minus architecto.
+            Welcome to my Portfolio. Crafting digital experiences through
+            design, code, and creativity. Explore my work and journey in web
+            development, mobile development, UX/UI design, and beyond.
           </p>
-          <Link href="/send-email" className="  text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
+          <Link
+            href="/send-email"
+            className="  text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+          >
             Contact me
           </Link>
         </div>

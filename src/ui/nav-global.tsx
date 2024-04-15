@@ -7,6 +7,8 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { RectangleStackIcon } from "@heroicons/react/20/solid";
+import { listSocialMedia } from "../lib/contact";
+import IconComponent from "./component-icon";
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +46,7 @@ export function GlobalNav() {
           hidden: !isOpen,
         })}
       >
-        <nav className="space-y-6 px-2 pb-24 pt-5">
+        <nav className="space-y-6 px-2 pt-5">
           {demos.map((section) => {
             return (
               <div key={section.name}>
@@ -60,6 +62,19 @@ export function GlobalNav() {
             );
           })}
         </nav>
+        <ul className="flex items-center ml-5 mt-3">
+          {listSocialMedia.social.map((media) => (
+            <li key={media.name}>
+              <a
+                href={media.link}
+                target="_blank"
+                className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-gray-300 border-gray-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <IconComponent>{media.logo}</IconComponent>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

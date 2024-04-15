@@ -7,7 +7,7 @@ import Link from "next/link";
 const Preview = () => {
   const pastProject = listPastProject;
   return (
-    <section className="pb-16 pt-8 bg-gray-950 px-6">
+    <section className="pb-16 pt-8 px-6">
       <div className="container mx-auto">
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-5 mt-8 text-center lg:text-start">
           My Finished Project
@@ -22,7 +22,7 @@ const Preview = () => {
                   (index % 2 !== 0 && "flex-row-reverse")
                 }
               >
-                <div className="w-full xl:w-1/3 border rounded-lg border-gray-700 mb-5 xl:mb-0">
+                <div className="w-full xl:w-1/3 border overflow-hidden rounded-lg border-gray-700 mb-5 xl:mb-0">
                   <Image
                     className="w-fit"
                     src={
@@ -88,7 +88,10 @@ const Preview = () => {
         })}
         <p className="text-gray-300 text-center mt-5">
           <span className="opacity-40">See more projects on </span>{" "}
-          <Link href={"/past-project"} className="text-white hover:cursor-pointer hover:text-gray-100">
+          <Link
+            href={"/past-project"}
+            className="text-white hover:cursor-pointer hover:text-gray-100"
+          >
             project section
           </Link>
         </p>

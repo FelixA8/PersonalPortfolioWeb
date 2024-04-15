@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { listJourneys } from "../lib/journey";
 import ParticlesComponent from "./component-particles";

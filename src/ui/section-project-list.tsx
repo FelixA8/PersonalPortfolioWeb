@@ -21,10 +21,10 @@ const PastProjectList: React.FC<{ path: string }> = ({ path }) => {
             selectedProject!.map((project) => (
               <li
                 key={project.name}
-                className="w-full lg:w-[45%] xl:w-[30%]  bg-black rounded-md border-[3px] border-gray-700 cursor-pointer hover:border-white hover:-translate-y-1 hover:shadow-cyan-500 hover:shadow-md transition duration-300"
+                className="w-full lg:w-[45%] xl:w-[30%] bg-black rounded-md overflow-hidden border-[1px] border-gray-700 cursor-pointer hover:border-white hover:-translate-y-1 hover:shadow-cyan-500 hover:shadow-md transition duration-300"
               >
                 <Link href={href + `/${project.slug}`}>
-                  <div className="flex flex-col w-full mx-auto lg:mx-0">
+                  <div className="flex flex-col w-full mx-auto lg:mx-0 ">
                     <Image
                       className="w-fit"
                       width={2000000}

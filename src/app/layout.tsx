@@ -26,7 +26,7 @@ export default function RootLayout({
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <body className="bg-gray-1100 pb-36 overflow-x-hidden">
+      <body className="bg-gray-1100 pb-12 overflow-x-hidden">
         <GlobalNav />
         <div id="modal-root"></div>
         <div className="lg:pl-72">

@@ -26,7 +26,7 @@ function BgText({
               : "text-white"
           } ${
             bgColor === "" ? colorSelector : bgColor
-          } py-1 px-2 rounded-sm flex items-center font-semibold`}
+          } py-1 px-2 mb-2 rounded-sm flex items-center font-semibold`}
         >
           <p className="m-0 text-sm xl:text-md">{bgTitle}</p>
         </div>

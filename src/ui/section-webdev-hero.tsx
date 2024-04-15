@@ -18,33 +18,33 @@ const WebDevHero = () => {
         </h4>
         <div className="flex flex-wrap gap-[5%] gap-y-10">
           <div className="w-full xl:w-[70%] shadow-lg bg-black shadow-gray-900 flex flex-col p-5 rounded-xl justify-center">
-            <h3 className="font-semibold uppercase text-white text-xl mb-10  text-center xl:text-start">
+            <h3 className="font-semibold uppercase text-white text-xl mb-10 text-center xl:text-start">
               Created with:
             </h3>
             <div className="flex flex-wrap justify-around gap-7 lg:justify-between">
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <NextJSLogo />
                 <p className="text-center mt-5 font-light text-lg">Next.js</p>
               </div>
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <TypeScriptLogo />
                 <p className="text-center mt-5 font-light text-lg">
                   TypeScript
                 </p>
               </div>
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <ReactJSLogo />
                 <p className="text-center mt-5 font-light text-lg">React JS</p>
               </div>
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <TailwindLogo />
                 <p className="text-center mt-5 font-light text-lg">Tailwind</p>
               </div>
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <AmazonS3Icon />
                 <p className="text-center mt-5 font-light text-lg">AWS S3</p>
               </div>
-              <div className="w-20 xl:w-[7rem] xl:h-[7rem]">
+              <div className="w-20 xl:w-[6rem]">
                 <GoogleCloudIcon />
                 <p className="text-center mt-5 font-light text-lg">Cloud</p>
               </div>

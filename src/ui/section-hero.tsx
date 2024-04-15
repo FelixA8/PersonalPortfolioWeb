@@ -20,10 +20,11 @@ const Hero = () => {
             development, mobile development, UX/UI design, and beyond.
           </p>
           <Link
-            href="/send-email"
+            target="_blank"
+            href="https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com/resume.pdf"
             className="  text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
           >
-            Contact me
+            Preview CV
           </Link>
         </div>
         <div className="w-full lg:w-1/2 self-end">

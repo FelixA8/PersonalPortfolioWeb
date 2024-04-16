@@ -11,21 +11,6 @@ export type Project = {
 
 export const listCurrentProject: Project[] = [
   {
-    name: "NextJS Portfolio",
-    description:
-      "Welcome to my portfolio website, powered by Next.js! Explore a showcase of my work, achievements, and skills in one seamless digital experience. Crafted with Next.js, a powerful React framework, this portfolio combines the flexibility of React components with the performance optimization of server-side rendering. The result? A lightning-fast website that delivers a smooth user experience across all devices. Browse through my projects, ranging from web applications and mobile apps to UI/UX designs and more. Each project is meticulously presented, highlighting key features, technologies used, and my role in the development process. Whether you're a potential employer, collaborator, or simply curious about my work, you'll find detailed insights into my capabilities and expertise. With Next.js's built-in support for static site generation and server-side rendering, this portfolio ensures optimal performance and SEO-friendliness. Rest assured that your experience is not only visually engaging but also easily discoverable by search engines. But this portfolio isn't just about showcasing past accomplishments; it's also a reflection of my ongoing journey in the world of technology. Stay tuned for updates as I continue to explore new technologies, tackle exciting challenges, and push the boundaries of innovation.",
-    image: [
-      "/project/portfolio-nextjs/1.png",
-      "/project/portfolio-nextjs/2.png",
-      "/project/portfolio-nextjs/3.png",
-    ],
-    sourceLink: "https://github.com/FelixA8/PersonalPortfolioWeb",
-    publishLink: "https://felix-personal-portfolio.vercel.app/",
-    duration: "March 2024 - Present",
-    framework: ["NextJS", "Tailwind CSS", "Typescript", "React Framework"],
-    slug: "nextjsportfolio",
-  },
-  {
     name: "Data Science Club Web",
     description:
       "Consist of 6 team members, We are currently creating a website for Data Science Club. An organization in Binus University. The goal of the website is to let people knew deeper of the organization, while still giving the best User Experience and User Interface. The project is currently on progress",
@@ -54,6 +39,21 @@ export const listCurrentProject: Project[] = [
 ];
 
 export const listPastProject: Project[] = [
+  {
+    name: "NextJS Portfolio",
+    description:
+      "Welcome to my portfolio website, powered by Next.js! Explore a showcase of my work, achievements, and skills in one seamless digital experience. Crafted with Next.js, a powerful React framework, this portfolio combines the flexibility of React components with the performance optimization of server-side rendering. The result? A lightning-fast website that delivers a smooth user experience across all devices. Browse through my projects, ranging from web applications and mobile apps to UI/UX designs and more. Each project is meticulously presented, highlighting key features, technologies used, and my role in the development process. Whether you're a potential employer, collaborator, or simply curious about my work, you'll find detailed insights into my capabilities and expertise. With Next.js's built-in support for static site generation and server-side rendering, this portfolio ensures optimal performance and SEO-friendliness. Rest assured that your experience is not only visually engaging but also easily discoverable by search engines. But this portfolio isn't just about showcasing past accomplishments; it's also a reflection of my ongoing journey in the world of technology. Stay tuned for updates as I continue to explore new technologies, tackle exciting challenges, and push the boundaries of innovation.",
+    image: [
+      "/project/portfolio-nextjs/1.png",
+      "/project/portfolio-nextjs/2.png",
+      "/project/portfolio-nextjs/3.png",
+    ],
+    sourceLink: "https://github.com/FelixA8/PersonalPortfolioWeb",
+    publishLink: "https://felixanderson.vercel.app/",
+    duration: "March 2024 - April 2024",
+    framework: ["NextJS", "Tailwind CSS", "Typescript", "React Framework"],
+    slug: "nextjsportfolio",
+  },
   {
     name: "Portfolio With Vanilla HTML, CSS, JS",
     description:

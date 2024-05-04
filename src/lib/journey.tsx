@@ -68,10 +68,16 @@ export const listJourneys: {
           logo: "Flutter Logo",
         },
         {
-          title: "Kotlin//Android Studio",
+          title: "Kotlin/ Android Studio",
           description:
             "As an alternative of Java. Kotlin serves a more simple syntax and usually, used for mobile development. Designing the UI is easy (as we can drag and drop the component), but other aspect is OOP related which is challenging. It has an advantages which is more customizable that Flutter, but the code is not compatible for iOS, hence you will need more code to write.",
           logo: "Kotlin Logo",
+        },
+        {
+          title: "React Native - Expo",
+          description:
+            "A more convenient way to develop an Application using React Native. Expo is great for creating application for two different environment (ios/ android) using one source code.",
+          logo: "Expo Logo",
         },
       ],
     },

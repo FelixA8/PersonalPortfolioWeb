@@ -1,3 +1,4 @@
+import ExpoLogo from "./svg/expo-logo";
 import FlutterLogo from "./svg/flutter-logo";
 import GitHubLogo from "./svg/github";
 import KotlinLogo from "./svg/kotlin-logo";
@@ -40,6 +41,8 @@ const SectionCard: React.FC<JounneyProps> = ({ name, description, logo }) => {
     picture = <MySQLLogo />;
   } else if (logo === "Vercel Logo") {
     picture = <VercelLogo />;
+  } else if (logo === "Expo Logo") {
+    picture = <ExpoLogo />
   } else {
     picture = <div></div>;
   }

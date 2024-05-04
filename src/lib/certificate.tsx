@@ -15,6 +15,11 @@ export const listCertificate: {
     preview: "/certificate/Certificate_PKMGFT_Image.png"
   },
   {
+    title: "Favorite Presentation PKMGFT",
+    image: "/certificate/Certificate_PKMGFT_BestPresentation.jpg",
+    preview: "/certificate/Certificate_PKMGFT_BestPresentation.jpg"
+  },
+  {
     title: "Flutter & Dart - The Complete Guide [2023 Edition]",
     image: "/certificate/UdemyCertificate_Flutter_Maxmillian.jpg",
     preview: "/certificate/UdemyCertificate_Flutter_Maxmillian.jpg"
@@ -28,5 +33,10 @@ export const listCertificate: {
     title: "The Complete 2023 Web Development Bootcamp",
     image: "/certificate/UdemyCertificate_HTMLCSS.jpg",
     preview: "/certificate/UdemyCertificate_HTMLCSS.jpg"
+  },
+  {
+    title: "React Native - The Practical Guide [2024 Edition]",
+    image: "/certificate/UdemyCertificate_ReactNative_Maxmillian.jpg",
+    preview: "/certificate/UdemyCertificate_ReactNative_Maxmillian.jpg"
   },
 ];

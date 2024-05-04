@@ -29,10 +29,11 @@ const CarouselCoverFlow: React.FC<{ items: any }> = ({ items }) => {
       {items.map((item: any) => (
         <SwiperSlide key={item.image} className="!flex !justify-center">
           <Image
+          className="cursor-pointer"
           onClick={():void => {window.open(`https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com${item.preview}`)}}
           width={480}
           height={357}
-          alt="d"
+          alt="Certificate Image"
             src={
               "https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com" +
               item.image

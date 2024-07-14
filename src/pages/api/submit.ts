@@ -21,7 +21,7 @@ export default async function handler(
     credentials: {
       client_email: process.env.GOOGLE_CLIENT_EMAIL,
       private_key: process.env.GOOGLE_CLIENT_KEY?.replace(/\\n/g, "\n"),
-      private_key_id: "7ec10fa6d8596dd19b065519b9dd5266ceb552d4",
+      private_key_id: process.env.PRIVATE_KEY_ID,
     },
     scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
@@ -32,7 +32,7 @@ export default async function handler(
   });
   try {
     await sheets.spreadsheets.values.append({
-      spreadsheetId: "1z_rm9-TJEj97Pt2QGeeioj7qowg2GZYMftrnUZzbwUM",
+      spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: "A1:D1",
       valueInputOption: "USER_ENTERED",
       requestBody: {

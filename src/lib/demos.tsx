@@ -28,10 +28,6 @@ export const demos: { name: string; items: Item[] }[] = [
         name: "Past Project",
         slug: "past-project",
       },
-      {
-        name: "Current Project",
-        slug: "current-project",
-      },
     ],
   },
   {

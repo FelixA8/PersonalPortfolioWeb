@@ -40,6 +40,20 @@ export const listCurrentProject: Project[] = [
 
 export const listPastProject: Project[] = [
   {
+    name: "Buzivest",
+    description:
+      "This application is designed to provide support for small to medium sellers (MSMEs) in accessing the set of funds needed to develop their business. In addition, this application opens up wider investment opportunities for all levels of society, thereby enabling more inclusive participation in the world of investment. In this way, this application aims to reduce inequality in the world of capital markets, creating a fairer and more equitable economic environment for all parties involved.",
+    image: [
+      "/project/buzivest/1.png",
+      "/project/buzivest/2.png",
+    ],
+    sourceLink: "https://github.com/BuziFest/BuziFestFrontEnd",
+    publishLink: "https://drive.google.com/file/d/1M_y8ohV0AUnwhfh9UPQx3NTbU2IUcuuU/view?usp=sharing",
+    duration: "March 2024 - July 2024",
+    framework: ["Kotlin", "Firebase"],
+    slug: "buzivest",
+  },
+  {
     name: "NextJS Portfolio",
     description:
       "Welcome to my portfolio website, powered by Next.js! Explore a showcase of my work, achievements, and skills in one seamless digital experience. Crafted with Next.js, a powerful React framework, this portfolio combines the flexibility of React components with the performance optimization of server-side rendering. The result? A lightning-fast website that delivers a smooth user experience across all devices. Browse through my projects, ranging from web applications and mobile apps to UI/UX designs and more. Each project is meticulously presented, highlighting key features, technologies used, and my role in the development process. Whether you're a potential employer, collaborator, or simply curious about my work, you'll find detailed insights into my capabilities and expertise. With Next.js's built-in support for static site generation and server-side rendering, this portfolio ensures optimal performance and SEO-friendliness. Rest assured that your experience is not only visually engaging but also easily discoverable by search engines. But this portfolio isn't just about showcasing past accomplishments; it's also a reflection of my ongoing journey in the world of technology. Stay tuned for updates as I continue to explore new technologies, tackle exciting challenges, and push the boundaries of innovation.",

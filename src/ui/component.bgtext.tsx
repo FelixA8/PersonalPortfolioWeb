@@ -61,6 +61,8 @@ function setBgColor(bgTitle: string): string {
     return "bg-[#007ACC]";
   } else if (bgTitle === "Firebase") {
     return "bg-[#FFCA28]";
+  } else if (bgTitle === "Kotlin") {
+    return "bg-[#198DDA]";
   }
   return "";
 }

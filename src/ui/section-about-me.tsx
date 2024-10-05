@@ -12,8 +12,11 @@ const AboutMe = () => {
             Road on becoming a world class developer
           </h2>
           <p className="text-base text-gray-300 lg:text-lg lg:pr-[4rem]">
-            As a Learner, my mission is to create a sufficient and productive
-            app for all people, helping many people.
+            An enthusiastic and aspiring developer with expertise in web and app development. Committed to
+            continuous learning and staying adaptable in the ever-evolving tech industry. Possesses strong soft skills,
+            including leadership and teamwork, and is eager to contribute to impactful projects that solve real-world
+            problems and help others.
+
           </p>
         </div>
         <div className="w-full mt-10 lg:w-1/2">

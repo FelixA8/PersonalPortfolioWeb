@@ -25,7 +25,7 @@ const TimelineCard: React.FC<ExperienceProps> = ({
       <div className="text-gray-400">
         <div className="flex mb-5">
           <div className="text-base font-normal">
-            <span className="font-medium text-white">{experienceRole}</span> of{" "}
+            <span className="font-medium text-white">{experienceRole}</span> at{" "}
             <span className="font-medium text-white">{experienceName}</span>{" "}
             {experienceCommit !== 0 && (
               <span>
@@ -51,8 +51,11 @@ const TimelineCard: React.FC<ExperienceProps> = ({
                 <div className="text-sm font-normal">
                   {event.date} - {event.location}
                 </div>
+                <div className="text-sm font-normal">
+                  Event Role: {event.role}
+                </div>
               </li>
-            ))}
+            ),)}
           </ol>
         )}
       </div>

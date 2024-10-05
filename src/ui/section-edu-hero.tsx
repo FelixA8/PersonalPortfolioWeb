@@ -41,7 +41,7 @@ const EduHero = () => {
                 <BgText
                   bgColor="bg-blue-600"
                   bgTitle="Current GPA"
-                  bgText="3.82"
+                  bgText="3.87"
                   showText={true}
                 />
               </div>
@@ -50,7 +50,7 @@ const EduHero = () => {
                   <BgText
                     bgColor="bg-purple-700"
                     bgTitle="Current Semester"
-                    bgText="4th Semester"
+                    bgText="5th Semester"
                     showText={true}
                   />
                 </div>

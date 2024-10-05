@@ -12,12 +12,8 @@ export const demos: { name: string; items: Item[] }[] = [
         slug: "education-background",
       },
       {
-        name: "Past Experience",
-        slug: "past-experience",
-      },
-      {
-        name: "Ongoing Experience",
-        slug: "ongoing-experience",
+        name: "Experience",
+        slug: "experience",
       },
     ],
   },

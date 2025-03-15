@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import BinusLogo from "./svg/binus-logo";
+import BinusLogo from "../../public/svg/binus-logo";
 import Meteors from "./component-meteor";
 import BgText from "./component.bgtext";
 

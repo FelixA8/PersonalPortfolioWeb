@@ -1,13 +1,13 @@
 import Link from "next/link";
 import CircularProgressBar from "./component-circular-progression";
-import AmazonS3Icon from "./svg/awss3";
-import GitHubLogo from "./svg/github";
-import NextJSLogo from "./svg/next-logo";
-import ReactJSLogo from "./svg/react";
-import TailwindLogo from "./svg/tailwind";
-import TypeScriptLogo from "./svg/typescript";
-import VercelLogo from "./svg/vercel";
-import GoogleCloudIcon from "./svg/cloud-console";
+import AmazonS3Icon from "../../public/svg/awss3";
+import GitHubLogo from "../../public/svg/github";
+import NextJSLogo from "../../public/svg/next-logo";
+import ReactJSLogo from "../../public/svg/react";
+import TailwindLogo from "../../public/svg/tailwind";
+import TypeScriptLogo from "../../public/svg/typescript";
+import VercelLogo from "../../public/svg/vercel";
+import GoogleCloudIcon from "../../public/svg/cloud-console";
 
 const WebDevHero = () => {
   return (

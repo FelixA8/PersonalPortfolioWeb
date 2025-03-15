@@ -1,4 +1,4 @@
-import IconComponent from "../component-icon";
+import IconComponent from "../../src/ui/component-icon";
 
 const NodeJSLogo = () => {
   return (

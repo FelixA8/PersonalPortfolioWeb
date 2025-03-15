@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { Item, demos } from "../lib/demos";
+import { Item, demos } from "../../lib/demos";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { RectangleStackIcon } from "@heroicons/react/20/solid";
-import { listSocialMedia } from "../lib/contact";
-import IconComponent from "./component-icon";
+import { listSocialMedia } from "../../lib/contact";
+import IconComponent from "../../ui/component-icon";
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);

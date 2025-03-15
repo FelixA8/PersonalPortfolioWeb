@@ -1,15 +1,15 @@
-import ExpoLogo from "./svg/expo-logo";
-import FlutterLogo from "./svg/flutter-logo";
-import GitHubLogo from "./svg/github";
-import KotlinLogo from "./svg/kotlin-logo";
-import MySQLLogo from "./svg/mysql-logo";
-import NextJSLogo from "./svg/next-logo";
-import NodeJSLogo from "./svg/nodejs-logo";
-import ReactJSLogo from "./svg/react";
-import TailwindLogo from "./svg/tailwind";
-import TypeScriptLogo from "./svg/typescript";
-import VercelLogo from "./svg/vercel";
-import WebLogo from "./svg/web-logo";
+import ExpoLogo from "../../public/svg/expo-logo";
+import FlutterLogo from "../../public/svg/flutter-logo";
+import GitHubLogo from "../../public/svg/github";
+import KotlinLogo from "../../public/svg/kotlin-logo";
+import MySQLLogo from "../../public/svg/mysql-logo";
+import NextJSLogo from "../../public/svg/next-logo";
+import NodeJSLogo from "../../public/svg/nodejs-logo";
+import ReactJSLogo from "../../public/svg/react";
+import TailwindLogo from "../../public/svg/tailwind";
+import TypeScriptLogo from "../../public/svg/typescript";
+import VercelLogo from "../../public/svg/vercel";
+import WebLogo from "../../public/svg/web-logo";
 
 interface JounneyProps {
   name: string;

@@ -9,7 +9,7 @@ const AboutMe = () => {
             About Me
           </h4>
           <h2 className="font-bold xl:text-3xl mb-5 lg:text-2xl lg:pr-[4rem]">
-            Road on becoming a world class developer
+            Ontrack as a Developer
           </h2>
           <p className="text-base text-gray-300 lg:text-lg lg:pr-[4rem]">
             An enthusiastic and aspiring developer with expertise in web and app development. Committed to

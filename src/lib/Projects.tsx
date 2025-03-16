@@ -9,34 +9,7 @@ export type Project = {
   description: string;
 };
 
-export const listCurrentProject: Project[] = [
-  {
-    name: "Data Science Club Web",
-    description:
-      "Consist of 6 team members, We are currently creating a website for Data Science Club. An organization in Binus University. The goal of the website is to let people knew deeper of the organization, while still giving the best User Experience and User Interface. The project is currently on progress",
-    image: ["/project/dsc-web/1.png"],
-    sourceLink: "",
-    publishLink: "",
-    duration: "Feb 2024 - Present",
-    framework: ["NextJS", "Tailwind CSS", "Typescript", "React Framework"],
-    slug: "dscweb",
-  },
-  {
-    name: "Willify",
-    description:
-      "Willify is a dynamic responsive website crafted using fundamental web technologies: vanilla HTML, CSS, and JavaScript. With five web pages encompassing the home, songs, registration, about us, and song details. Willify also implements the standard web principles, ensuring a clean and user-friendly interface. This project is dedicated to elevate my proficiency in web development, particularly in the aspect of web design. The project's pinnacle challenge lies in conceptualizing and structuring the website. This phase requires extensive research into web design principles and their practical implementation, also searching for references of other web pages. The project is currently on progress.",
-    image: [
-      "/project/willify/1.png",
-      "/project/willify/2.png",
-      "/project/willify/3.png",
-    ],
-    sourceLink: "",
-    publishLink: "",
-    duration: "February 2024 - Present",
-    framework: ["HTML", "CSS", "JavaScript"],
-    slug: "willify",
-  },
-];
+export const listCurrentProject: Project[] = [];
 
 export const listPastProject: Project[] = [
   {

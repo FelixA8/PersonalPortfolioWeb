@@ -1,7 +1,7 @@
 import Error from "next/error";
-import { Project, listCurrentProject, listPastProject } from "../lib/project";
+import { Project, listCurrentProject, listPastProject } from "../lib/Projects";
 import PaginationCarouselCard from "./component-paginationcarousel";
-import BgText from "./component.bgtext";
+import BgText from "../components/text/BgText";
 import Link from "next/link";
 
 const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {

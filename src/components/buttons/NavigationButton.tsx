@@ -10,3 +10,5 @@ const ButtonLink: React.FC<{url: string, title: string}> = ({url, title}) => {
     Preview CV
   </Link>
 }
+
+export default ButtonLink

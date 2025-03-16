@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "./component-typingeffect";
+import ButtonLink from "../components/buttons/NavigationButton";
 
 const Hero = () => {
   return (
@@ -19,14 +20,8 @@ const Hero = () => {
             design, code, and creativity. Explore my work and journey in web
             development, mobile development, UX/UI design, and beyond.
           </p>
-          <Link
-            target="_blank"
-            href="https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com/resume-ats.pdf"
-            className="  text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-          >
-            Preview CV
-          </Link>
-        </div>
+          <ButtonLink title="Preview CV" url="https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com/resume-ats.pdf" />
+         </div>
         <div className="w-full lg:w-1/2 self-end">
           <div className="relative mt-32 lg:mt-9 lg:right-0">
             <Image
@@ -47,7 +42,7 @@ const Hero = () => {
                   fill="#06b6d4"
                   d="M51,-42.5C62.1,-26.7,64.4,-5.8,61.3,16.3C58.1,38.4,49.5,61.7,32.5,71.3C15.5,81,-9.9,77.1,-32.7,66.6C-55.5,56.2,-75.8,39,-77.9,20.4C-80.1,1.8,-64.2,-18.3,-48.2,-35.2C-32.2,-52.1,-16.1,-65.7,1.9,-67.3C19.9,-68.8,39.9,-58.3,51,-42.5Z"
                   transform="translate(100 100)"
-                />
+                />  
               </svg>
             </span>
           </div>

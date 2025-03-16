@@ -2,7 +2,7 @@ const ProjectHeader: React.FC<{ path: string }> = ({ path }) => {
   var title = ""
   var description = ""
   if(path === "/past-project") {
-    title = "Past Project"
+    title = "Project"
     description = "This section describes my previous projects that has been created. Feel free to check the project and the source code :D"
   } else if(path === "/current-project") {
     title = "Current Project"

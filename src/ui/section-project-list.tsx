@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Project, listCurrentProject, listPastProject } from "../lib/project";
-import BgText from "./component.bgtext";
+import { listCurrentProject, listPastProject } from "../lib/Projects";
+import BgText from "../components/text/BgText";
 import Link from "next/link";
 
 const PastProjectList: React.FC<{ path: string }> = ({ path }) => {
   var selectedProject = null;
   var href = "";
+  
   if (path === "/past-project") {
     href = "/past-project";
     selectedProject = listPastProject;
@@ -13,6 +14,7 @@ const PastProjectList: React.FC<{ path: string }> = ({ path }) => {
     href = "/current-project";
     selectedProject = listCurrentProject;
   }
+
   return (
     <>
       <section className="pb-16 mx-6">

@@ -15,13 +15,8 @@ export const demos: { name: string; items: Item[] }[] = [
         name: "Experience",
         slug: "experience",
       },
-    ],
-  },
-  {
-    name: "Projects",
-    items: [
       {
-        name: "Past Project",
+        name: "Projects",
         slug: "past-project",
       },
     ],

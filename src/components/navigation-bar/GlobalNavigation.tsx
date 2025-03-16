@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Item, demos } from "../../lib/demos";
+import { Item, demos } from "../../lib/Routes";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";

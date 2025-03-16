@@ -1,5 +1,5 @@
-import EduDescription from "@/src/ui/section-edu-description";
-import EduHero from "@/src/ui/section-edu-hero";
+import EduDescription from "@/src/app/education-background/sections/EduDescription";
+import EduHero from "@/src/app/education-background/sections/EduHero";
 
 export default function Page() {
   return (

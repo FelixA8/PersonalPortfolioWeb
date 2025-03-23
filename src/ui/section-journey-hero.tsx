@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { listJourneys } from "../lib/journey";
-import ParticlesComponent from "../components/particles/ParticlesComponent";
-import Particles from "../components/particles/ParticlesComponent";
+import ParticlesComponent from "./particles/ParticlesComponent";
+import Particles from "./particles/ParticlesComponent";
 import AndroidLogo from "../../public/svg/android-logo";
 import GitHubLogo from "../../public/svg/github";
 import NodeJSLogo from "../../public/svg/nodejs-logo";

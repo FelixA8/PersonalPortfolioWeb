@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import ParticlesComponent from "../components/particles/ParticlesComponent";
+import ParticlesComponent from "./particles/ParticlesComponent";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

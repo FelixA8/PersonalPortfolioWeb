@@ -1,4 +1,4 @@
-import ListContact from "./component-list-contact";
+import ListContact from "./ListContact";
 
 const AboutMe = () => {
   return (

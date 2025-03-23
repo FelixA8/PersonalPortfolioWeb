@@ -1,5 +1,5 @@
 import { listSocialMedia } from "../lib/contact";
-import IconComponent from "./component-icon";
+import IconComponent from "./IconComponent";
 
 const ListContact = () => {
   const medias = listSocialMedia;

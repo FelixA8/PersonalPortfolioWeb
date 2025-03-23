@@ -9,9 +9,11 @@ export type Project = {
   description: string;
 };
 
-export const listCurrentProject: Project[] = [];
+export const listProject: Project[] = [
 
-export const listPastProject: Project[] = [
+]
+
+export const dummyProject: Project[] = [
   {
     name: "Buzivest",
     description:

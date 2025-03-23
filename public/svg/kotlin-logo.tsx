@@ -1,4 +1,4 @@
-import IconComponent from "../../src/ui/component-icon";
+import IconComponent from "../../src/ui/IconComponent";
 
 const KotlinLogo = () => {
   return (

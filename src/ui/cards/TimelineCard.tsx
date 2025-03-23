@@ -1,4 +1,4 @@
-import { Event } from "../lib/experience";
+import { Event } from "../../lib/experience";
 
 interface ExperienceProps {
   experienceDate: string;

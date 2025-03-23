@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { RectangleStackIcon } from "@heroicons/react/20/solid";
 import { listSocialMedia } from "../../lib/contact";
-import IconComponent from "../../ui/component-icon";
+import IconComponent from "../IconComponent";
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);

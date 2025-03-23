@@ -12,7 +12,7 @@ const Card: React.FC<{ name: string; image: string; link: string }> = ({
     className="max-w-[20rem] bg-black border-gray-700 border overflow-hidden rounded-md hover:cursor-pointer hover:border-white hover:-translate-y-1 hover:shadow-cyan-500 hover:shadow-md transition duration-300"
       onClick={():void => {
         window.open(
-          `https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com${link}`
+          `https://ofnlpbzjwclnxmqvwwlt.supabase.co/storage/v1/object/public/personalweb-storage/${link}`
         );
       }}
     >
@@ -20,7 +20,7 @@ const Card: React.FC<{ name: string; image: string; link: string }> = ({
         <Image
           className="w-full h-56 object-cover"
           alt=""
-          src={`https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com${image}`}
+          src={`https://ofnlpbzjwclnxmqvwwlt.supabase.co/storage/v1/object/public/personalweb-storage/${image}`}
           width={200}
           height={100}
         />

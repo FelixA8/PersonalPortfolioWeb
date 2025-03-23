@@ -9,7 +9,7 @@ import {
 } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
-import { Project } from "../lib/Projects";
+import { Project } from "../../lib/Projects";
 
 interface CarouselCardProps {
   cards: Project[];

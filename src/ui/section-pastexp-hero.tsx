@@ -1,5 +1,5 @@
 import { experiences } from "../lib/experience";
-import TimelineCard from "./component-timeline-card";
+import TimelineCard from "./cards/TimelineCard";
 
 const PastExperienceHero = () => {
   const listPastExperience = experiences;
@@ -7,11 +7,8 @@ const PastExperienceHero = () => {
     <section className="pt-10 pb-16 mx-6">
       <div className="container mx-auto flex flex-col">
         <h4 className="font-semibold uppercase text-cyan-500 text-lg mb-3">
-          My Experience
+          My Experience<p className="text-base text-gray-300 lg:text-lg mb-10"></p>
         </h4>
-        <p className="text-base text-gray-300 lg:text-lg mb-10">
-          This section focuses on Felix's experiences.
-        </p>
         <ol className="divide-y">
           {listPastExperience.map((experience, index) => (
             <div

@@ -1,5 +1,5 @@
+import MeteorCard from "@/src/ui/cards/MeteorCard";
 import BinusLogo from "../../../../public/svg/binus-logo";
-import MeteorCard from "../../../components/cards/MeteorCards";
 
 const EduHero = () => {
   return (

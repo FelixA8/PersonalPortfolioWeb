@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CircularProgressBar from "./component-circular-progression";
+import CircularProgressBar from "./CircularProgressBar";
 import AmazonS3Icon from "../../public/svg/awss3";
 import GitHubLogo from "../../public/svg/github";
 import NextJSLogo from "../../public/svg/next-logo";

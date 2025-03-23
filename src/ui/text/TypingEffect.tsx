@@ -1,13 +1,17 @@
 "use client";
 import TypewriterComponent from "typewriter-effect";
 
-const TypingEffect = () => {
+interface TypingEffectProps {
+  labels: string[];
+}
+
+const TypingEffect = ({ labels }: TypingEffectProps) => {
   return (
     <div className="text-gray-300 text-xl tracking-wide mb-5 lg:text-2xl">
       <TypewriterComponent
         options={{
           loop: true,
-          strings: ["I'm a Student", "I'm a Learner", "I'm a Developer"],
+          strings: labels, // <-- Now using the labels parameter dynamically!
           autoStart: true,
         }}
       />

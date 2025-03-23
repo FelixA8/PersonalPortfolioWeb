@@ -1,6 +1,6 @@
 import PastExperienceHero from "@/src/ui/section-pastexp-hero";
 import { experiences } from "../../lib/experience";
-import TimelineCard from "../../ui/component-timeline-card";
+import TimelineCard from "../../ui/cards/TimelineCard";
 
 export default function Page() {
   return (

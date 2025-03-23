@@ -1,6 +1,6 @@
 import Error from "next/error";
 import { Journey, listJourneys } from "../lib/journey";
-import SectionCard from "./component-sectioncard";
+import SectionCard from "./cards/SectionCard";
 
 const JourneySlug: React.FC<{ path: any }> = ({ path }) => {
   const words = path.split("/");

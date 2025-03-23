@@ -1,14 +1,13 @@
 import Error from "next/error";
-import { Project, listCurrentProject, listPastProject } from "../lib/Projects";
-import PaginationCarouselCard from "./component-paginationcarousel";
-import BgText from "../components/text/BgText";
+import { listProject, Project } from "../../../../lib/Projects";
+import PaginationCarouselCard from "../../../../ui/cards/PaginationCarouselCard";
+import BgText from "../../../../ui/text/BgText";
 import Link from "next/link";
 
-const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
+const ProjectSlug: React.FC<{ path: any }> = ({ path }) => {
   const words = path.split("/");
-  const parentPath = words[words.length - 2];
   const currPath = words[words.length - 1];
-  const res = findProject(currPath, parentPath);
+  const res = findProject(currPath);
   var project: Project;
   if (res === false) {
     return (
@@ -69,22 +68,14 @@ const PastProjectSlug: React.FC<{ path: any }> = ({ path }) => {
   );
 };
 
-function findProject(currPath: string, parentPath: string): Project | boolean {
-  if (parentPath === "past-project") {
-    for (const project of listPastProject) {
+function findProject(currPath: string): Project | boolean {
+    for (const project of listProject) {
       if (project.slug === currPath) {
         return project;
       }
     }
-  } else if (parentPath === "current-project") {
-    for (const project of listCurrentProject) {
-      if (project.slug === currPath) {
-        return project;
-      }
-    }
-  }
 
   return false;
 }
 
-export default PastProjectSlug;
+export default ProjectSlug;

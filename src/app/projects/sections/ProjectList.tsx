@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { listProject } from "../lib/Projects";
-import BgText from "./text/BgText";
+import { listProject } from "../../../lib/Projects";
+import BgText from "../../../ui/text/BgText";
 import Link from "next/link";
 
 const ProjectList: React.FC<{ path: string }> = ({ path }) => {

@@ -17,7 +17,7 @@ export const demos: { name: string; items: Item[] }[] = [
       },
       {
         name: "Projects",
-        slug: "past-project",
+        slug: "projects",
       },
     ],
   },

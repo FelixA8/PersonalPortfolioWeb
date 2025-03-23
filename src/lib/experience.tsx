@@ -12,7 +12,15 @@ export const experiences: {
   experienceCommit: number;
   event: Event[];
 }[] = [
-  
+    {
+      experienceDate: "Febuary 2025 - Present",
+      experienceRole: "iOS Programmer Intern",
+      experienceName: "Blibli",
+      experienceCommit: 0,
+      event: [
+
+      ],
+    },
     {
       experienceDate: "September 2024 - Present",
       experienceRole: "Tech Division",
@@ -23,7 +31,7 @@ export const experiences: {
       ],
     },
     {
-      experienceDate: "April 2024 - Present",
+      experienceDate: "April 2024 - Febuary 2025",
       experienceRole: "Member",
       experienceName: "Ureeka",
       experienceCommit: 0,
@@ -32,7 +40,7 @@ export const experiences: {
       ],
     },
     {
-      experienceDate: "Febuary 2024 - Present",
+      experienceDate: "Febuary 2024 - Febuary 2025",
       experienceRole: "Mentor",
       experienceName: "School of Computer Science",
       experienceCommit: 0,
@@ -41,7 +49,7 @@ export const experiences: {
       ],
     },
     {
-      experienceDate: "Febuary 2024 - Present",
+      experienceDate: "Febuary 2024 - Febuary 2025",
       experienceRole: "Head Treasurer",
       experienceName: "Data Science Club 2024/2025",
       experienceCommit: 4,

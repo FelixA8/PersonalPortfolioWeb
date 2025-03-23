@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import TypingEffect from "./component-typingeffect";
+import ButtonLink from "./buttons/NavigationButton";
+import TypingEffect from "./text/TypingEffect";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           <h1 className="text-cyan-500 font-semibold text-3xl tracking-wide mb-2 lg:text-5xl">
             Felix Anderson
           </h1>
-          <TypingEffect />
+          <TypingEffect labels={["I'm a Student", "I'm a Learner", "I'm a Developer"]}/>
           <p className="text-gray-300 text-base tracking-wide mb-5">
             Welcome to my Portfolio. Crafting digital experiences through
             design, code, and creativity. Explore my work and journey in web
@@ -21,7 +22,7 @@ const Hero = () => {
           </p>
           <Link
             target="_blank"
-            href="https://felix-personalweb-file-storage.s3.ap-southeast-1.amazonaws.com/resume-ats.pdf"
+            href={"https://ofnlpbzjwclnxmqvwwlt.supabase.co/storage/v1/object/public/personalweb-storage/portfolio/Felix-PortfolioATS.pdf"}
             className="  text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
           >
             Preview CV

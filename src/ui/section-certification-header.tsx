@@ -1,5 +1,5 @@
 import { listCertificate } from "../lib/certificate";
-import Card from "./component-card";
+import Card from "./cards/Card";
 
 const SectionCertificateHeader = () => {
   return (

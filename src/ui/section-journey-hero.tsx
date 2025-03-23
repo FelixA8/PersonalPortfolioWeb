@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { listJourneys } from "../lib/journey";
-import ParticlesComponent from "./component-particles";
-import Particles from "./component-particles";
-import AndroidLogo from "./svg/android-logo";
-import GitHubLogo from "./svg/github";
-import NodeJSLogo from "./svg/nodejs-logo";
-import WebLogo from "./svg/web-logo";
+import ParticlesComponent from "./particles/ParticlesComponent";
+import Particles from "./particles/ParticlesComponent";
+import AndroidLogo from "../../public/svg/android-logo";
+import GitHubLogo from "../../public/svg/github";
+import NodeJSLogo from "../../public/svg/nodejs-logo";
+import WebLogo from "../../public/svg/web-logo";
 
 const JourneyHero: React.FC<{ path: string }> = ({ path }) => {
   return (

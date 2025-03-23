@@ -1,12 +1,12 @@
 "use client";
-import PastProjectSlug from "@/src/ui/section-projectslug";
 import { usePathname, useSearchParams } from "next/navigation";
+import ProjectSlug from "../../projects/[slug]/sections/ProjectSlug";
 
 const Page = () => {
   const searchParams = usePathname();
   
   return <>
-    <PastProjectSlug path={searchParams} />
+    <ProjectSlug path={searchParams} />
   </>;
 };
 
